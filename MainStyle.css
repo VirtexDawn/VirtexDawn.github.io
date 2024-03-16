@@ -65,6 +65,19 @@ h1{
     color: white;
 }
 
+.Item2Button{
+    transition: 0.4s;
+    border: 2px solid #4257cc;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size:larger;
+    color: white;
+}
+
 .Item1Button:hover{
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D;
+}
+
+.Item2Button:hover{
+    background-color: #4257cc;
 }
