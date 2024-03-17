@@ -9,17 +9,37 @@ body{
 }
 
 .HeaderBlockade{
+    display: grid;
+    align-self: center;
+    align-content: center;
     width: auto;
-    height: auto;
+    height: fit-content;
     background-color: rgb(46, 46, 46);
     box-shadow: 5px 7px 10px rgb(17, 17, 17);
 
     background-image: url(Asset/jpg-png/CarbonFiber.jpg);
-    object-fit: cover;
+    align-self: center;
+    align-content: center;
     background-position: center;
 }
 
-h1{
+.FreewareText{
+    text-align:center;
+    display: inline-block;
+    align-self: center;
+
+    font-size: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px;
+
+    background-image: url(Asset/gif/Dawn.gif);
+    background-repeat: repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+}
+
+.H1{
     font-size: 3cm;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -28,6 +48,7 @@ h1{
     background-position: center;
     color: transparent;
     background-clip: text;
+    align-self: center;
 }
 
 #Version {
@@ -50,7 +71,16 @@ h1{
     box-shadow:5px 7px 10px rgb(18, 18, 19);
 }
 
+.Item1:hover, .Item2:hover, .Item3:hover{
+    opacity: 1;
+
+    transition: opacity 0.7s ease-in-out;
+    -webkit-transition: opacity 0.7s ease-out;
+    -moz-transition: opacity 0.7s ease-in-out;
+}
+
 .Item1, .Item2, .Item3{
+    opacity: 0.5;
     width: auto;
     height: auto;
     align-self:center;
@@ -63,6 +93,9 @@ h1{
     text-align: center;
 
     padding: 7px;
+    animation-duration: 3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .Item1Header, .Item2Header, .Item3Header{
