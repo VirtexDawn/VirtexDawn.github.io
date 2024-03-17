@@ -1,15 +1,30 @@
 body{
     background-color: rgb(26, 26, 26);
     color: rgb(153, 153, 153);
+
+    background-image: url(Asset/webp/DotsBG.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.HeaderBlockade{
+    width: auto;
+    height: auto;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 5px 7px 10px rgb(17, 17, 17);
+
+    background-image: url(Asset/jpg-png/CarbonFiber.jpg);
+    object-fit: cover;
+    background-position: center;
 }
 
 h1{
     font-size: 3cm;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    background-image: url(Asset/gif/Space_2.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(Asset/gif/Dawn.gif);
+    background-repeat: repeat;
     background-position: center;
     color: transparent;
     background-clip: text;
@@ -22,7 +37,7 @@ h1{
 
 .container{
     width: auto;
-    height: 350px;
+    height: fit-content;
     background-color: rgb(22, 27, 31);
     color: aliceblue;
     border-radius: 15px;
@@ -45,7 +60,7 @@ h1{
     box-shadow:5px 7px 10px rgb(18, 18, 19);
     font-size:medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:justify;
+    text-align: center;
 
     padding: 7px;
 }
@@ -63,6 +78,9 @@ h1{
     border-radius: 5px;
     font-size:larger;
     color: white;
+
+    text-align: left;
+    width: auto;
 }
 
 .Item2Button{
@@ -72,6 +90,21 @@ h1{
     border-radius: 5px;
     font-size:larger;
     color: white;
+
+    text-align: left;
+    width: auto;
+}
+
+.Item3Button{
+    transition: 0.4s;
+    border: 2px solid #da2626;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size:larger;
+    color: white;
+
+    text-align: left;
+    width: auto;
 }
 
 .Item1Button:hover{
@@ -80,4 +113,8 @@ h1{
 
 .Item2Button:hover{
     background-color: #4257cc;
+}
+
+.Item3Button:hover{
+    background-color: #da2626;
 }
